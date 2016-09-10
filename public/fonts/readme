@@ -1,0 +1,17 @@
+http://onlinefontconverter.com
+
+select formats: ttf, woff, eot, svg
+
+Sample CSS code:
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'),
+  local('PTSans-Regular'),
+  url('../fonts/PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PT_Sans-Web-Regular.woff') format('woff'),
+  url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype'),
+  url('../fonts/PT_Sans-Web-Regular.svg#PTSans-Regular') format('svg');
+}

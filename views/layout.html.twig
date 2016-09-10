@@ -1,0 +1,49 @@
+{% extends "::base.html.twig" %}
+
+{% block body_attributes %} class="layout-container ls-top-navbar layout-sidebar-l3-md-up"{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top ls-left-sidebar">
+        {# Navbar toggle #}
+        <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar">
+            <i class="fa fa-bars" aria-hidden="true" aria-label="Toggle navbar"></i>
+        </button>
+        {# Sidebar toggle #}
+        <button class="navbar-toggler hidden-md-up pull-xs-left" type="button" data-toggle="sidebar" data-target="#sidebar">
+            <i class="fa fa-bars" aria-hidden="true" aria-label="Toggle sidebar"></i>
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown dropdown-settings nav-item pull-xs-right">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cogs" aria-label="{{ 'panel.account_button'|trans }}"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a class="dropdown-item" href="{{ path('panel_logout') }}">
+                                <i class="sidebar-menu-icon fa fa-sign-out" aria-hidden="true"></i>
+                                {{ 'panel.logout'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="sidebar sidebar-left sidebar-size-3 sidebar-visible-md-up sidebar-dark" id="sidebar">
+        <h1 class="sidebar-brand sidebar-brand-bg sidebar-brand-border m-b-0">
+            <a class="sidebar-brand-link" href="{{ path('panel_index') }}">Virtus</a>
+        </h1>
+        {{ knp_menu_render('panel_main', {
+            'template': 'PanelBundle::main-menu.html.twig',
+            'currentClass': 'active',
+            'ancestorClass': 'active open',
+            'compressed': true
+        }) }}
+    </nav>
+    <main class="layout-content">
+        <div class="container-fluid">
+            {% block main %}{% endblock %}
+        </div>
+    </main>
+{% endblock %}

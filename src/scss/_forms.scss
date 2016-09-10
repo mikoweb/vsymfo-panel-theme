@@ -1,0 +1,33 @@
+select.form-control {
+  padding: $input-padding-y+.1rem $input-padding-x;
+}
+
+.form-inline {
+  .select2 {
+    min-width: 135px;
+  }
+
+  @media (min-width: breakpoint-min(sm)) {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+
+    .form-group {
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    .select2 {
+      width: auto !important;
+    }
+  }
+
+  @media (max-width: breakpoint-max(xs)) {
+    .select2 {
+      width: 100% !important;
+    }
+  }
+}
+
+.form-control-text-danger {
+  display: block;
+  margin-top: .75rem;
+}

@@ -1,0 +1,9 @@
+resources:
+    javascript:
+        sources:
+            theme:
+                - js/adminplus-init.js
+    stylesheet:
+        sources:
+            theme:
+                - theme.scss,grunt

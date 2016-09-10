@@ -1,0 +1,35 @@
+.th--tight {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.valign_middle {
+  vertical-align: middle;
+}
+
+.valign_bottom {
+  vertical-align: bottom;
+}
+
+.valign_top {
+  vertical-align: top;
+}
+
+.tbody--valigin-middle td {
+  vertical-align: middle;
+}
+
+.tbody--valigin-bottom td {
+  vertical-align: bottom;
+}
+
+.btn-group-td {
+  white-space: nowrap;
+  > .btn {
+    float: none;
+  }
+
+  .btn + .btn {
+    margin-left: -4px;
+  }
+}
