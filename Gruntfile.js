@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                     {
                         nonull: true,
                         src: '<%= path.modules %>sass-md-colors/README.md',
-                        dest: '<%= path.authors %>ssass-md-colors.md'
+                        dest: '<%= path.authors %>sass-md-colors.md'
                     },
                     {
                         nonull: true,
