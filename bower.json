@@ -1,10 +1,11 @@
 {
     "name": "vsymfo-panel-theme",
-    "license": "LGPL-3.0",
+    "license": "MIT",
     "version": "0.0.1",
     "homepage": "https://github.com/mikoweb/vsymfo-panel-theme",
     "authors": [
-        "Rafał Mikołajun <rafal@mikoweb.pl>"
+        "Rafał Mikołajun <rafal@mikoweb.pl>",
+        "Themekit (https://github.com/themekit)"
     ],
     "keywords": [
         "vsymfo",
