@@ -3,7 +3,8 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON("package.json"),
         path: {
             src: 'src/',
-            modules: 'node_modules/'
+            modules: 'node_modules/',
+            authors: 'authors/'
         },
         copy: {
             adminplus: {
@@ -43,6 +44,30 @@ module.exports = function (grunt) {
                         dest: '<%= path.src %>simplebar/simplebar.min.js'
                     }
                 ]
+            },
+            authors: {
+                files: [
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>adminplus/README.md',
+                        dest: '<%= path.authors %>adminplus.md'
+                    },
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>sass-md-colors/README.md',
+                        dest: '<%= path.authors %>ssass-md-colors.md'
+                    },
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>bootstrap-layout/README.md',
+                        dest: '<%= path.authors %>bootstrap-layout.md'
+                    },
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>bootstrap-layout-scrollable/README.md',
+                        dest: '<%= path.authors %>bootstrap-layout-scrollable.md'
+                    }
+                ]
             }
         }
     });
@@ -54,5 +79,9 @@ module.exports = function (grunt) {
         'copy:bootstrapLayout',
         'copy:bootstrapLayoutScrollable',
         'copy:simplebar'
+    ]);
+
+    grunt.registerTask('authors', [
+        'copy:authors'
     ]);
 };
