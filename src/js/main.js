@@ -1,4 +1,4 @@
-require(['jquery', 'webui-cssloader', 'select2', 'lib/bootstrap-layout/bootstrap-layout'],
+require(['jquery', 'webui-cssloader', 'select2', 'theme/bootstrap-layout'],
 function ($, loader) {
     "use strict";
     loader.inject('@select2', function () {

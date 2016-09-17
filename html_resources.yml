@@ -2,7 +2,8 @@ resources:
     javascript:
         sources:
             theme:
-                - js/adminplus-init.js
+                - js/modules.js
+                - js/main.js
     stylesheet:
         sources:
             theme:
