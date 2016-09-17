@@ -164,6 +164,10 @@ $sm-collapse-open-toggle-icon:      "\f077" !default; // chevron-up
 // SIDEBAR DARK //
 //////////////////
 
+$sidebar-dark-bg:                   $grey-900 !default;
+$sm-dark-open-bg:                   darken($grey-900, 2%) !default;
+$sm-dark-active-button-bg:          $grey-800 !default;
+$sm-dark-hover-button-bg:           lighten($grey-800, 5%) !default;
 @import '../bootstrap-layout/variables/sidebar-dark';
 
 ///////////////////

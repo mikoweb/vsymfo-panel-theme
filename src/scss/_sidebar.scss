@@ -1,7 +1,14 @@
-.sidebar {
-  background-color: $grey-900;
+.sidebar-dark .sidebar-brand, .sidebar-brand {
+  background-color: $deep-orange-900;
+  @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 75%, transparent 75%),
+          linear-gradient($deep-orange-900, darken($deep-orange-900, 10%)));
 }
 
-.sidebar-dark .sidebar-brand, .sidebar-brand {
-  background-color: $red-900;
+.sidebar-dark {
+  .active > .sidebar-menu-button {
+    background-color: $sm-dark-active-button-bg;
+    &:hover {
+      background-color: $sm-dark-hover-button-bg;
+    }
+  }
 }

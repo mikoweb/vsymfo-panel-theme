@@ -1,0 +1,13 @@
+.card {
+    @include border-radius(9px 9px 0 0);
+}
+
+.card-header {
+    @include background-image(linear-gradient(hsla(0, 100%, 100%, 0.25) 0%, hsla(0, 100%, 100%, 0.08) 85%, transparent 85%),
+            linear-gradient(#fff, $grey-200));
+    border-bottom: 3px solid $deep-orange-900;
+
+    &:first-child {
+        @include border-radius(7px 7px 0 0);
+    }
+}

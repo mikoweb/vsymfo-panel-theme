@@ -27,9 +27,9 @@ $gray-light:                        #818a91 !default;
 $gray-lighter:                      #eceeef !default;
 $gray-lightest:                     #f7f7f9 !default;
 
-$brand-primary:                     $red-900 !default;
+$brand-primary:                     $deep-orange-900 !default;
 
-$body-bg:                           rgba(0, 0, 0, 0.05) !default;
+$body-bg:                           $grey-100 !default;
 $body-color:                        $gray-dark !default;
 $font-family-base:                  'Helvetica Neue', Arial, Helvetica, sans-serif !default;
 
@@ -43,7 +43,7 @@ $border-color:                      #e5e5e5 !default;
 $dropdown-border-color:             $border-color !default;
 
 $brand-primary:                     $light-blue-600 !default;
-$brand-secondary:                   darken($brand-primary,18%) !default;
+$brand-secondary:                   $brown-900 !default;
 $brand-warning:                     #FF9800 !default;
 $brand-info:                        #00BCD4 !default;
 $brand-success:                     $green-600 !default;
@@ -51,9 +51,9 @@ $brand-danger:                      $red-900 !default;
 
 $btn-border-radius:                 0 !default;
 
-$btn-primary-color:                 $grey-700 !default;
-$btn-primary-bg:                    $grey-200 !default;
-$btn-primary-border:                $gray-lighter !default;
+$btn-primary-color:                 $deep-orange-900 !default;
+$btn-primary-bg:                    $grey-100 !default;
+$btn-primary-border:                $deep-orange-100 !default;
 
 $btn-secondary-color:               #fff !default;
 $btn-secondary-bg:                  $brand-secondary !default;
@@ -105,7 +105,7 @@ $progress-bar-danger-bg:            $brand-danger !default;
 $jumbotron-bg:                      darken($body-bg, 5%) !default;
 $jumbotron-border:                  1px solid rgba(0,0,0, .05) !default;
 
-$input-border-color:                $grey-300 !default;
+$input-border-color:                $deep-orange-100 !default;
 $input-group-addon-border-color:    $input-border-color !default;
 
 $text-muted:                        $gray-light !default;
@@ -114,4 +114,4 @@ $text-muted-light:                  lighten($text-muted, 22%) !default;
 $card-nav-link:                     $gray-light !default;
 $card-nav-link-hover:               $gray !default;
 
-$table-bg-hover:                    $red-50 !default;
+$table-bg-hover:                    $deep-orange-50 !default;

@@ -1,0 +1,8 @@
+.btn-default {
+    border-color: $deep-orange-100;
+    color: $grey-800;
+    &:hover, &:focus {
+        border-color: $deep-orange-100;
+        color: $grey-800;
+    }
+}
