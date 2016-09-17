@@ -3,7 +3,9 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON("package.json"),
         path: {
             src: 'src/',
+            public: 'public/',
             modules: 'node_modules/',
+            bower: 'src/bower_components/',
             authors: 'authors/'
         },
         copy: {
@@ -20,16 +22,34 @@ module.exports = function (grunt) {
                 dest: '<%= path.src %>sass-md-colors'
             },
             bootstrapLayout: {
-                expand: true,
-                cwd: '<%= path.modules %>bootstrap-layout/src/sass',
-                src: '**',
-                dest: '<%= path.src %>bootstrap-layout'
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= path.modules %>bootstrap-layout/src/sass',
+                        src: '**',
+                        dest: '<%= path.src %>bootstrap-layout'
+                    },
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>bootstrap-layout/dist/bootstrap-layout.js',
+                        dest: '<%= path.public %>js/bootstrap-layout.js'
+                    }
+                ]
             },
             bootstrapLayoutScrollable: {
-                expand: true,
-                cwd: '<%= path.modules %>bootstrap-layout-scrollable/src/sass',
-                src: '**',
-                dest: '<%= path.src %>bootstrap-layout/scrollable'
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= path.modules %>bootstrap-layout-scrollable/src/sass',
+                        src: '**',
+                        dest: '<%= path.src %>bootstrap-layout/scrollable'
+                    },
+                    {
+                        nonull: true,
+                        src: '<%= path.modules %>bootstrap-layout-scrollable/dist/bootstrap-layout-scrollable.js',
+                        dest: '<%= path.public %>js/bootstrap-layout-scrollable.js'
+                    }
+                ]
             },
             simplebar: {
                 files: [
@@ -44,6 +64,12 @@ module.exports = function (grunt) {
                         dest: '<%= path.src %>simplebar/simplebar.min.js'
                     }
                 ]
+            },
+            fontAwesome: {
+                expand: true,
+                cwd: '<%= path.bower %>components-font-awesome/fonts',
+                src: '**',
+                dest: '<%= path.public %>fonts/font-awesome'
             },
             authors: {
                 files: [
@@ -78,7 +104,8 @@ module.exports = function (grunt) {
         'copy:mdColors',
         'copy:bootstrapLayout',
         'copy:bootstrapLayoutScrollable',
-        'copy:simplebar'
+        'copy:simplebar',
+        'copy:fontAwesome'
     ]);
 
     grunt.registerTask('authors', [

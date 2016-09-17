@@ -1,9 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "adminplus": "~1.0.0-alpha",
-    "bootstrap-layout": "~1.0.0-alpha",
-    "bootstrap-layout-scrollable": "~1.0.0",
+    "adminplus": "~1.0.0-alpha.12",
+    "bootstrap-layout": "~1.0.0-alpha.10",
+    "bootstrap-layout-scrollable": "~1.1.0",
     "sass-md-colors": "~1.0.0",
     "simplebar": "grsmto/simplebar#v1.1.9"
   },

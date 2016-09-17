@@ -14,8 +14,8 @@
         "virtus"
     ],
     "dependencies": {
-        "components-font-awesome": "~4.6",
-        "bootstrap": "~4.0.0",
+        "components-font-awesome": "~4.6.0",
+        "bootstrap": "4.0.0-alpha.2",
         "bourbon": "~4.2.7"
     }
 }
