@@ -37,6 +37,7 @@
 @import "adminplus/tabs";
 
 // Style
+@import "scss/mixins";
 @import "scss/common";
 @import "scss/tables";
 @import "scss/sidebar";
@@ -45,3 +46,4 @@
 @import "scss/card";
 @import "scss/buttons";
 @import "scss/nav";
+@import "scss/login-screen";

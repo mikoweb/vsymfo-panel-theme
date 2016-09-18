@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+@mixin icomon-icon() {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -18,15 +18,27 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-f-hole:before {
+[class^="icon-"], [class*=" icon-"] {
+  @include icomon-icon;
+}
+
+@mixin icomon-icon-f-hole() {
   content: "\e901";
 }
-.icon-f-hole-right:before {
+
+.icon-f-hole:before {
+  @include icomon-icon-f-hole;
+}
+
+@mixin icomon-icon-f-hole-right() {
   content: "\e900";
+}
+
+.icon-f-hole-right:before {
+  @include icomon-icon-f-hole-right;
 }

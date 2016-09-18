@@ -1,0 +1,28 @@
+@mixin theme-strings-layer($width, $stringSize, $color, $indent) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: $width;
+  border-left: $stringSize solid $color;
+  border-right: $stringSize solid $color;
+
+  &::before, &::after {
+    content: "";
+    width: $stringSize;
+    height: 100%;
+    background-color: $color;
+    position: absolute;
+    top: 0;
+  }
+
+  &::before {
+    left: $indent;
+  }
+
+  &::after {
+    right: $indent;
+  }
+}
