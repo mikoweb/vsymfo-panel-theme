@@ -1,5 +1,9 @@
 .select2-container--default {
+  .select2-selection--single {
+    border: 1px solid $deep-orange-100;
+  }
+
   .select2-results__option--highlighted[aria-selected] {
-    background-color: $red-900;
+    background-color: $deep-orange-900;
   }
 }
