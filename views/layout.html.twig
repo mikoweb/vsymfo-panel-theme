@@ -32,7 +32,11 @@
     </nav>
     <nav class="sidebar sidebar-left sidebar-size-3 sidebar-visible-md-up sidebar-dark" id="sidebar">
         <h1 class="sidebar-brand sidebar-brand-bg sidebar-brand-border m-b-0">
-            <a class="sidebar-brand-link" href="{{ path('panel_index') }}">Virtus</a>
+            <a class="sidebar-brand-link" href="{{ path('panel_index') }}">
+                <i class="icon-f-hole brand-f-hole" aria-label="Violin F-hole"></i>
+                <span>Virtus Symfony</span>
+                <i class="icon-f-hole-right brand-f-hole" aria-label="Violin F-hole Right"></i>
+            </a>
         </h1>
         {{ knp_menu_render('panel_main', {
             'template': 'PanelBundle::main-menu.html.twig',
