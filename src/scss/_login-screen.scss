@@ -8,7 +8,7 @@
           linear-gradient(darken($brown-900, 20%), $deep-orange-400));
 }
 
-@include keyframes(loginLayerMove) {
+/*@include keyframes(loginLayerMove) {
   from {
     width: 500px;
     top: 0;
@@ -45,7 +45,7 @@
     opacity: 1;
     background-position: center -400px;
   }
-}
+}*/
 
 @include keyframes(cardLoginMove) {
   from {
