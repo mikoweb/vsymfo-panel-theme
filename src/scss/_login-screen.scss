@@ -8,44 +8,85 @@
           linear-gradient(darken($brown-900, 20%), $deep-orange-400));
 }
 
-/*@include keyframes(loginLayerMove) {
-  from {
-    width: 500px;
-    top: 0;
-    opacity: 0;
+@include keyframes(loginLayerMove) {
+  0% {
+    top: 115%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
   }
-  to {
-    width: 580px;
-    top: -230px;
-    opacity: 1;
+  35% {
+    left: 50%;
+    top: 110%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
+  }
+  36% {
+    left: 58%;
+    top: 35%;
+    @include transform(translate(-50%, -50%) rotate(-20deg));
+  }
+  38% {
+    left: 58%;
+    top: 35%;
+    @include transform(translate(-50%, -50%) rotate(-40deg));
+  }
+  42% {
+    left: 58%;
+    top: 35%;
+    @include transform(translate(-50%, -50%) rotate(200deg));
+  }
+  43% {
+    left: -10%;
+    top: 50%;
+    @include transform(translate(-50%, -50%) rotate(445deg));
+  }
+  45% {
+    left: -10%;
+    top: 50%;
+    @include transform(translate(-50%, -50%) rotate(445deg));
+  }
+  80% {
+    left: -5%;
+    top: 50%;
+    @include transform(translate(-50%, -50%) rotate(445deg));
+  }
+  81% {
+    top: 115%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
+  }
+  82% {
+    top: 125%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
+  }
+  85% {
+    top: 125%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
+  }
+  95% {
+    top: 115%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) rotate(0deg));
   }
 }
 
 .login_layer {
-  background: url($path-theme + "/images/violin-4.svg") no-repeat center -700px;
+  background: url($path-theme + "/images/violin.svg") no-repeat center;
   background-size: 100%;
-  height: 100%;
-  width: 500px;
+  height: 490px;
+  width: 184px;
   line-height: 100%;
   font-size: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  opacity: 0;
+  top: 115%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
   @include animation-name(loginLayerMove);
-  @include animation-duration(4s);
-  @include animation-fill-mode(forwards);
+  @include animation-duration(30s);
   @include animation-timing-function(ease-out);
-
-  @media (max-width: 499px), (max-height: 720px) {
-    width: 300px;
-    @include animation-name(none);
-    opacity: 1;
-    background-position: center -400px;
-  }
-}*/
+  @include animation-iteration-count(infinite);
+}
 
 @include keyframes(cardLoginMove) {
   from {
@@ -67,11 +108,11 @@
   margin: 0 auto 20px;
   border-radius: 0 !important;
   border: 0 none;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   @include animation-name(cardLoginMove);
   @include animation-duration(.7s);
   @include animation-fill-mode(forwards);
-  @include animation-timing-function(ease-in);
+  @include animation-timing-function(ease-in-out);
 
   .card-block {
     padding: 2rem;
