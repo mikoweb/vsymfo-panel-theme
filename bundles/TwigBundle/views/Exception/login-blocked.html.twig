@@ -1,0 +1,18 @@
+{% extends "::error-layout.html.twig" %}
+
+{% trans_default_domain 'exception' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'exception.login_blocked.breadcrumb'|trans }}</li>
+{% endblock %}
+
+{% block content %}
+    <section class="card">
+        <header class="card-header">
+            <h2 class="card-title">{{ 'exception.login_blocked.head_text'|trans }}</h2>
+        </header>
+        <div class="card-block">
+            <p>{{ 'exception.login_blocked.message'|trans|replace({'%max_attempts%': max_attempts, '%block_duration%': block_duration})|raw }}</p>
+        </div>
+    </section>
+{% endblock %}

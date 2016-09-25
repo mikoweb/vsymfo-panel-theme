@@ -1,0 +1,21 @@
+{% extends "::error-layout.html.twig" %}
+
+{% trans_default_domain 'exception' %}
+
+{% block breadcrumb %}
+    <li class="active">Error</li>
+{% endblock %}
+
+{% block content %}
+    <section class="card">
+        <header class="card-header">
+            <h2 class="card-title">{{ 'exception.error_overall.h1'|trans }}</h2>
+        </header>
+        <div class="card-block">
+            <p>
+                {{ 'exception.error_overall.h2'|trans|replace({'%status_code%': status_code, '%status_text%': status_text}) }}<br />
+                {{ 'exception.error_overall.info'|trans }}
+            </p>
+        </div>
+    </section>
+{% endblock %}

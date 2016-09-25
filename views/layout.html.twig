@@ -31,14 +31,7 @@
         </div>
     </nav>
     <nav class="sidebar sidebar-left sidebar-size-3 sidebar-visible-md-up sidebar-dark" id="sidebar">
-        <h1 class="sidebar-brand sidebar-brand-bg sidebar-brand-border m-b-0">
-            <i class="strings-layer" aria-hidden="true"></i>
-            <a class="sidebar-brand-link" href="{{ path('panel_index') }}">
-                <i class="icon-f-hole-right brand-f-hole" aria-label="Violin F-hole"></i>
-                <span class="brand-text brand-text-left">Virtus</span>
-                <span class="brand-text brand-text-right">Symfony</span>
-            </a>
-        </h1>
+        {% include ":include:sidebar-brand.html.twig" %}
         {{ knp_menu_render('panel_main', {
             'template': 'PanelBundle::main-menu.html.twig',
             'currentClass': 'active',

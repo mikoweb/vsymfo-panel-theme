@@ -1,0 +1,18 @@
+{% extends "::error-layout.html.twig" %}
+
+{% trans_default_domain 'exception' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'exception.error_404.breadcrumb'|trans }}</li>
+{% endblock %}
+
+{% block content %}
+    <section class="card">
+        <header class="card-header">
+            <h2 class="card-title">{{ 'exception.error_404.title'|trans }}</h2>
+        </header>
+        <div class="card-block">
+            <p>{{ 'exception.error_404.description'|trans }}</p>
+        </div>
+    </section>
+{% endblock %}

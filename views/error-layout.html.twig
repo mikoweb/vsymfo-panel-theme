@@ -1,0 +1,27 @@
+{% extends "::base.html.twig" %}
+
+{% block body_attributes %} class="layout-container ls-top-navbar"{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top">
+        <div class="container">
+            {% include ":include:sidebar-brand.html.twig" %}
+        </div>
+    </nav>
+    <main class="layout-content">
+        <div class="container">
+            <nav class="card-block card-block--no-padding-top">
+                <ol class="breadcrumb breadcrumb--no-margin">
+                    <li class="nav-item">
+                        <a href="{{ path('panel_index') }}">
+                            <i class="fa fa-home" aria-label="Home"></i>
+                        </a>
+                    </li>
+                    <li class="active">Panel</li>
+                    {% block breadcrumb %}{% endblock %}
+                </ol>
+            </nav>
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+{% endblock %}
