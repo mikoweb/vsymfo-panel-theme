@@ -13,6 +13,10 @@
       background-color: $sm-dark-hover-button-bg;
     }
   }
+
+  .open > .sidebar-menu-button {
+    color: $sidebar-dark-link-color;
+  }
 }
 
 .sidebar-menu-button {
