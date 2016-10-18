@@ -1,0 +1,52 @@
+.list-table {
+  width: 100%;
+  max-width: 100%;
+  display: table;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $spacer;
+  table-layout: auto;
+
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.list-table .form-control {
+  min-width: 150px;
+}
+
+.list-table__row {
+  display: table-row;
+}
+
+.list-table__group, .list-table__head {
+  display: table-row-group;
+}
+
+.list-table__col, .list-table__th {
+  display: table-cell;
+  padding: $table-cell-padding;
+  line-height: $line-height;
+  border-top: $table-border-width solid $table-border-color;
+}
+
+.list-table__col {
+  vertical-align: middle;
+}
+
+.list-table__th {
+  vertical-align: bottom;
+  border-bottom: (2 * $table-border-width) solid $table-border-color;
+  font-weight: bold;
+}
+
+.list-table__col--nowrap, .list-table__th--nowrap {
+  white-space: nowrap;
+}
+
+.list-table--hover .list-table__group .list-table__row:hover {
+  background-color: $table-bg-hover;
+}

@@ -10,3 +10,11 @@
 .btn-main {
   @include button-variant(#fff, $deep-orange-900, $deep-orange-900);
 }
+
+.btn-group > .btn.first {
+  @include border-left-radius($border-radius !important);
+}
+
+.btn-group > .btn.last {
+  @include border-right-radius($border-radius !important);
+}
