@@ -37,7 +37,9 @@
 @import "adminplus/tabs";
 
 // Plugins
-@import "scss/select2";
+@import "bower_components/select2/src/scss/core";
+@import "scss/select2/bootstrap";
+@import "scss/select2/style";
 @import "bower_components/sweetalert/dev/sweetalert";
 @import "bower_components/toastr/toastr";
 
