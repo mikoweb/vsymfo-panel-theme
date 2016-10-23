@@ -18,3 +18,43 @@
 .btn-group > .btn.last {
   @include border-right-radius($border-radius !important);
 }
+
+.toggle.btn {
+  border-color: $grey-300;
+  &:hover, &:focus {
+    border-color: $grey-300;
+  }
+}
+
+.toggle-group {
+  .toggle-handle {
+    background: $grey-100;
+    border-color: $grey-300;
+    &:hover, &:focus {
+      background: $grey-200;
+      border-color: $grey-300;
+    }
+  }
+
+  .toggle-off {
+    background: #fff;
+    color: $grey-500;
+    border-color: #fff;
+    &:hover, &:focus {
+      background: $light-green-50;
+      color: $grey-700;
+      border-color: $light-green-50;
+    }
+  }
+
+  .toggle-on {
+    background: $green-500;
+    border-color: $green-500;
+    color: #fff;
+    &:hover, &:focus {
+      background: $green-600;
+      border-color: $green-600;
+      color: #fff;
+    }
+  }
+}
