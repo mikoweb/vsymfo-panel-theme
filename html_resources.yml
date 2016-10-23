@@ -2,6 +2,7 @@ resources:
     javascript:
         sources:
             theme:
+                - js/view/row-url.js
                 - js/modules.js
                 - js/main.js
     stylesheet:
