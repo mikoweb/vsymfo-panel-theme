@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 @import url("https://fonts.googleapis.com/css?family=David+Libre&subset=latin-ext");
 
 @import "scss/variables";
@@ -37,6 +37,7 @@
 @import "adminplus/tabs";
 
 // Plugins
+@import "scss/select2";
 @import "bower_components/sweetalert/dev/sweetalert";
 @import "bower_components/toastr/toastr";
 
