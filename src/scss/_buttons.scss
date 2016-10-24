@@ -21,6 +21,7 @@
 
 .toggle.btn {
   border-color: $grey-300;
+  border-radius: $border-radius;
   &:hover, &:focus {
     border-color: $grey-300;
   }
@@ -48,12 +49,12 @@
   }
 
   .toggle-on {
-    background: $green-500;
-    border-color: $green-500;
+    background: $brand-success;
+    border-color: $brand-success;
     color: #fff;
     &:hover, &:focus {
-      background: $green-600;
-      border-color: $green-600;
+      background: darken($brand-success, 12%);
+      border-color: darken($brand-success, 12%);
       color: #fff;
     }
   }
