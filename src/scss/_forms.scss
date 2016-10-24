@@ -27,6 +27,10 @@ select.form-control {
   }
 }
 
+.form-control--no-border {
+  border-color: $input-bg;
+}
+
 .form-control-text-danger {
   display: block;
   margin-top: .75rem;
