@@ -3,6 +3,9 @@ function ($, RowUrlView) {
     "use strict";
     var body = $('body');
     $('input.input-toggle').bootstrapToggle();
-    $('select.select2').select2();
+    $('select.select2').select2({
+        width: '100%',
+        allowClear: true
+    });
     new RowUrlView({el: body});
 });
