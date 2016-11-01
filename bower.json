@@ -1,18 +1,4 @@
 {
-    "name": "vsymfo-panel-theme",
-    "license": "MIT",
-    "homepage": "https://github.com/mikoweb/vsymfo-panel-theme",
-    "authors": [
-        "Rafał Mikołajun <rafal@mikoweb.pl>",
-        "Themekit (https://github.com/themekit)"
-    ],
-    "keywords": [
-        "vsymfo",
-        "symfony",
-        "cmf",
-        "theme",
-        "virtus"
-    ],
     "devDependencies": {
         "components-font-awesome": "~4.6.0",
         "bootstrap": "4.0.0-alpha.2",

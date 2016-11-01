@@ -1,5 +1,22 @@
 {
-  "private": true,
+  "name": "vsymfo-panel-theme",
+  "author": {
+    "name": "Rafał Mikołajun"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "keywords": [
+    "vsymfo",
+    "symfony",
+    "cmf",
+    "theme",
+    "virtus"
+  ],
+  "main": "src",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikoweb/vsymfo-panel-bundle.git"
+  },
   "dependencies": {
     "adminplus": "~1.0.0-alpha.12",
     "bootstrap-layout": "~1.0.0-alpha.10",
@@ -10,5 +27,20 @@
   "devDependencies": {
     "grunt": "~1.0",
     "grunt-contrib-copy": "~1.0"
-  }
+  },
+  "files": [
+    "authors",
+    "bundles",
+    "public",
+    "src",
+    "views",
+    ".bowerrc",
+    ".jshintrc",
+    "bower.json",
+    "Gruntfile.js",
+    "html_resources.yml",
+    "LICENSE",
+    "README.md",
+    "translations.yml"
+  ]
 }
