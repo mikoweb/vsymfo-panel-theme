@@ -1,0 +1,17 @@
+.no-js {
+  .dropdown-toggle {
+    &:focus, &:active {
+      + .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  .sidebar-menu-item {
+    &:hover {
+      > .sidebar-submenu {
+        display: block;
+      }
+    }
+  }
+}
