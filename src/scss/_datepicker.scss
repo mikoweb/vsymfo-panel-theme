@@ -1,0 +1,23 @@
+$datepickerTextColor: (
+        button: $deep-orange-900,
+        otherMonth: #dedede,
+        otherMonthInRange: #ccc,
+        disabled: #aeaeae,
+        currentDate: $deep-orange-900,
+        common: #4a4a4a,
+        dayNames: #FF9A19,
+        navArrows: #9c9c9c
+) !default;
+
+$datepickerBG: (
+        selected: $deep-orange-900,
+        selectedHover: darken($deep-orange-900, 5),
+        inRange: rgba($deep-orange-900, .1),
+        hover: #f0f0f0
+) !default;
+
+@import "../bower_components/air-datepicker/src/sass/datepicker-config";
+@import "../bower_components/air-datepicker/src/sass/datepicker";
+@import "../bower_components/air-datepicker/src/sass/cell";
+@import "../bower_components/air-datepicker/src/sass/navigation";
+@import "../bower_components/air-datepicker/src/sass/timepicker";
