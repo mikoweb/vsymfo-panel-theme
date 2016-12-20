@@ -8,4 +8,4 @@ resources:
     stylesheet:
         sources:
             theme:
-                - theme.scss,grunt
+                - theme.scss,node
