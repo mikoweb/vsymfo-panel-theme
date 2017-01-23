@@ -4,7 +4,7 @@
     "name": "Rafał Mikołajun"
   },
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "vsymfo",
     "symfony",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/mikoweb/vsymfo-panel-bundle.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "adminplus": "~1.0.0-alpha.12",
     "bootstrap-layout": "~1.0.0-alpha.10",
     "bootstrap-layout-scrollable": "~1.1.0",
